@@ -1,0 +1,124 @@
+
+.analyticsScreen {
+    text-align: center;
+}
+
+.analyticsHeading {
+    color: #5076ff;
+    margin: 2rem;
+}
+
+.analyticsTable {
+    border-collapse: collapse;
+}
+
+.analyticsTable th,
+.analyticsTable td {
+    padding: 8px;
+}
+
+.analyticsTable tbody tr {
+    border-radius: 1rem;
+}
+
+.analyticsTable tr:nth-child(2n) {
+    background-color: #b3c4ff;
+    border-radius: 1rem;
+}
+
+.analyticsTable thead {
+    background-color: #5076ff;
+    border-radius: 1rem;
+    color: #ffffff;
+    padding: 12px;
+}
+
+.analyticsTable tbody img {
+    cursor: pointer;
+}
+
+
+.modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(5px);
+}
+
+.modal {
+    background-color: #fff;
+    padding: 2.5rem;
+    border-radius: 5px;
+    width: 30vw;
+    height: 30vh;
+}
+
+.modalContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    height: -webkit-fill-available;
+}
+
+
+.buttonContainer {
+    margin-top: 1.5rem;
+    display: flex;
+    gap: 2rem;
+    width: -webkit-fill-available;
+    justify-content: space-around;
+}
+
+.confirmDeleteModalButton {
+    background: #ff4b4b;
+    color: #fff;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    border: none;
+    flex: 1;
+    transition-duration: 0.4s;
+
+    cursor: pointer;
+}
+
+.cancelModalButton {
+    border-radius: 0.625rem;
+    background: #fff;
+    padding: 0.5rem;
+    flex: 1;
+    border: none;
+    cursor: pointer;
+    transition-duration: 0.4s;
+
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.25);
+}
+
+/*quiz modal*/
+.questionModalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filtesr: blur(5px);
+    color: #9f9f9f;
+}
+
+.questionModal {
+    background-color: #fff;
+    padding: 2.5rem;
+    border-radius: 5px;
+    width: fit-content;
+    height: fit-content;
+}

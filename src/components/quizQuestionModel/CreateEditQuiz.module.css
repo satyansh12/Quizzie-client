@@ -1,0 +1,229 @@
+
+.modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(5px);
+}
+
+.modal {
+    background-color: #fff;
+    padding: 2.5rem;
+    border-radius: 5px;
+    width: 30vw;
+    height: 30vh;
+}
+
+.modalContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    height: -webkit-fill-available;
+}
+
+
+/* for Quiz name modal */
+
+.modalQuizNameContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    /* align-items: center; */
+    height: -webkit-fill-available;
+}
+
+.modalQuizNameInput {
+    border-radius: 0.625rem;
+    background: #fff;
+    box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.15);
+    width: -webkit-fill-available;
+    border: none;
+    padding: 1rem;
+    font-size: 1rem;
+}
+
+.modalQuizTypeContainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.confirmQuizNameButton {
+    border-radius: 0.625rem;
+    background: #60b84b;
+    border: none;
+    padding: 0.5rem;
+    flex: 1;
+    color: #fff;
+    transition-duration: 0.4s;
+
+    cursor: pointer;
+}
+
+/* for question modal */
+
+.questionModalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(5px);
+    color: #9f9f9f;
+}
+
+.questionModal {
+    background-color: #fff;
+    padding: 2.5rem;
+    border-radius: 5px;
+    width: fit-content;
+    height: fit-content;
+}
+
+.modalContent {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+
+.questionContent {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+
+.questionNo {
+    background: white;
+    border-radius: 50%;
+    padding: 1rem;
+    width: 10px;
+    height: 10px;
+    display: flex;
+    filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.15));
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.activeQuestionNumber {
+    border: 2px double #60b84b;
+}
+
+.crossBtn {
+    top: -5px;
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+    color: #696868;
+    transition: all 0.3s ease;
+}
+
+.crossBtn:hover {
+    transform: scale(1.4);
+}
+
+.addBtn {
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+.pollQuestion {
+    border-radius: 0.625rem;
+    background: #fff;
+    box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.15);
+    width: -webkit-fill-available;
+    border: none;
+    padding: 0.45rem 0.7rem;
+    font-size: 1rem;
+}
+
+.greenBackground {
+    background: #60b84b;
+
+    color: #fff;
+}
+
+.optionInput {
+    border-radius: 0.625rem;
+    /* background: #FFF; */
+    box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.15);
+    padding: 0.5rem;
+    border: none;
+    margin-bottom: 0.6rem;
+    margin-left: 0.4rem;
+}
+
+.confirmCreateQuizButton {
+    border-radius: 0.625rem;
+    background: #60b84b;
+    border: none;
+    padding: 0.5rem;
+    flex: 1;
+    color: #fff;
+    transition-duration: 0.4s;
+}
+
+/* quiz published modal */
+
+.modalPublished {
+    background-color: #fff;
+    padding: 4rem 7rem;
+    border-radius: 5px;
+    width: 40vw;
+    height: 30vh;
+    gap: 0;
+}
+
+.quizLink {
+    background-color: #ededed;
+    width: -moz-fit-content;
+    border-radius: 0.5rem;
+    padding: 0.4rem 1rem;
+    overflow-x: clip;
+    text-align: center;
+}
+
+.quizLink::-webkit-scrollbar {
+    display: none;
+}
+
+.shareLinkBtn {
+    border-radius: 0.625rem;
+    background: #60b84b;
+    border: none;
+    padding: 0.7rem 3.5rem;
+    color: #fff;
+    cursor: pointer;
+    margin-bottom: 1rem;
+    transition-duration: 0.4s;
+}
+
+.shareLinkBtn:hover {
+    background: #5bd93c;
+}
+
+.shareLinkBtn:active {
+    transform: scale(0.9);
+}
+
+input[type="radio"]:checked {
+    color: #60b84b;
+}
+
+
+@media (max-width: 998px) {
+    .modal{
+        width: auto;
+    }
+}

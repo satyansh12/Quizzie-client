@@ -1,0 +1,62 @@
+
+.logo {
+    color: #474444;
+    font-family: "Jomhuria", sans-serif;
+    font-size: 3.5rem;
+    font-style: normal;
+    font-weight: 550;
+    line-height: normal;
+    text-align: center;
+    cursor: pointer;
+}
+
+.modeBtn {
+    border-radius: 0.625rem;
+    /*background: #ccc;*/
+    padding: 12px;
+    border: none;
+    cursor: pointer;
+    font-weight: 550;
+}
+
+.modeBtn:hover {
+    background: #dedcdc;
+}
+
+.activeScreen {
+    background: #ccc;
+    /*box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.12);*/
+}
+
+.sideBar {
+    width: 15vw;
+    height: -webkit-fill-available;
+    padding: 1rem 0.5rem;
+    background: #fff;
+    flex-direction: column;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 600;
+    min-width: 100px;
+}
+
+.sideBar hr {
+    margin: auto 0 10px 0;
+    border: none;
+    border-top: 1px solid #ccc;
+}
+
+.modesContainer {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: -webkit-fill-available;
+}
+
+.logoutBtn {
+    font-weight: 550;
+    background-color: #fff;
+    cursor: pointer;
+    border: none;
+}

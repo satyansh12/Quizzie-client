@@ -1,0 +1,11 @@
+.mainContainer {
+    height: 100vh;
+    display: flex;
+}
+
+.subContainer {
+    background: #EDEDED;
+    margin-left: auto;
+    margin-right: auto;
+    /* height: 100%; */
+}

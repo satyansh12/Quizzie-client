@@ -1,0 +1,84 @@
+.mainContainer {
+  height: 100vh;
+  /* width: 100vw; */
+  padding: 1.5rem 7rem;
+  text-align: center;
+}
+
+.loaderContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.header {
+  color: #5076ff;
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-bottom: 2rem;
+}
+
+.questionAnalysisContainer {
+  margin-bottom: 1.5rem;
+}
+
+.question {
+  color: #000;
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+.optionCount {
+  font-size: 3rem;
+  display: flex; /* Use flexbox for alignment */
+  align-items: center; /* Align text vertically at the center */
+  padding: 10px; /* Add some padding around the text */
+}
+
+.analysisCard {
+  background: white;
+  /*box-shadow: 0 5px 5px rgb(0 0 0 / 0.1); !* Shadow effect *!*/
+  border-radius: 2px; /* Rounded corners */
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center; /* This ensures vertical alignment at the center for items within .analysisCard */
+  flex-direction: row; /* Corrected 'direction' to 'flex-direction' */
+  padding: 10px; /* Add padding around each .analysisCard for better spacing */
+}
+
+.boxes{
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  gap: 1.5rem;
+}
+.analytics_boxes{
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  gap: 1.5rem;
+}
+
+.totalAttemptsBox,
+.correctAttemptsBox,
+.incorrectAttemptsBox {
+  border-radius: 0.3125rem;
+  background: #fff;
+  padding: 2rem 1rem;
+}
+
+@media (max-width: 868px) {
+  .mainContainer {
+    padding: 1.5rem 2rem;
+    text-align: center;
+  }
+  .correctAttemptsBox,
+  .incorrectAttemptsBox,
+  .totalAttemptsBox {
+    padding: 0.5rem 0.5rem;
+  }
+}
+
